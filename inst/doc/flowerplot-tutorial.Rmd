@@ -1,0 +1,44 @@
+---
+title: "flowerplot-tutorial"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{flowerplot-tutorial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The goal of flowerplot is to draw flower plot.
+
+## Installation
+
+You can install the released version of flowerplot from [GitHub](https://github.com/dongwei1220/flowerplot) with:
+
+``` r
+devtools::install_github("dongwei1220/flowerplot")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example, fig.width=7,fig.height=6.5}
+library(flowerplot)
+
+## basic example code
+data(flower_dat)
+head(flower_dat)
+
+flowerplot(flower_dat)
+flowerplot(flower_dat, a = 0.5, b = 2, r = 1,
+           circle_col = "red", ellipse_col_pal = "Spectral",
+           label_text_cex = 1)
+flowerplot(flower_dat, angle = 60, ellipse_col_pal = "Set3")
+```
+

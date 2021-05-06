@@ -1,0 +1,16 @@
+Package: flowerplot
+Title: Flower Plot
+Version: 0.1.0
+Author: Wei Dong
+Maintainer: Wei Dong <dongw26@mail2.sysu.edu.cn>
+Description: This Package Is Used To Draw Flower Plot With Multiple Data Sets.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10), plotrix, RColorBrewer
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-05-06 13:14:58 UTC; Dell
