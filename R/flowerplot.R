@@ -5,7 +5,7 @@
 #' @author Wei Dong <dongw26@mail2.sysu.edu.cn>
 #'
 #' @param data a dataframe with multiple columns.
-#' @param angle set the angle angle of rotation in degress.
+#' @param angle set the angle of rotation in degress.
 #' @param a set the radii of the ellipses along the x-axes.
 #' @param b set the radii of the ellipses along the y-axes.
 #' @param r set the radius of the circle.
