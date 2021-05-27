@@ -27,7 +27,7 @@
 #'            circle_col = "red", ellipse_col_pal = "Spectral",
 #'            label_text_cex = 1.5)
 #' flowerplot(flower_dat, angle = 60, ellipse_col_pal = "Set3")
-flowerplot <- function(data, angle = 90,
+flowerplot <- function(flower_dat, angle = 90,
                        a = 1, b = 2, r = 1,
                        ellipse_col = NULL,
                        ellipse_col_pal = "Set1",
