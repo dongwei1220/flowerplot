@@ -4,7 +4,7 @@
 #'
 #' @author Wei Dong <dongw26@mail2.sysu.edu.cn>
 #'
-#' @param data a dataframe with multiple columns.
+#' @param flower_dat a dataframe with multiple columns.
 #' @param angle set the angle of rotation in degress.
 #' @param a set the radii of the ellipses along the x-axes.
 #' @param b set the radii of the ellipses along the y-axes.
@@ -27,7 +27,7 @@
 #'            circle_col = "red", ellipse_col_pal = "Spectral",
 #'            label_text_cex = 1.5)
 #' flowerplot(flower_dat, angle = 60, ellipse_col_pal = "Set3")
-flowerplot <- function(data, angle = 90,
+flowerplot <- function(flower_dat, angle = 90,
                        a = 1, b = 2, r = 1,
                        ellipse_col_pal = "Set1",
                        circle_col = "white",
