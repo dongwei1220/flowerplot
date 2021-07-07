@@ -29,6 +29,7 @@
 #' flowerplot(flower_dat, angle = 60, ellipse_col_pal = "Set3")
 flowerplot <- function(flower_dat, angle = 90,
                        a = 1, b = 2, r = 1,
+                       ellipse_col = NULL,
                        ellipse_col_pal = "Set1",
                        circle_col = "white",
                        label_text_cex = 1)
@@ -53,8 +54,10 @@ flowerplot <- function(flower_dat, angle = 90,
   # set the angle of degress
   deg <- 360 / n
   # set the ellipse filling color
-  colors <- RColorBrewer::brewer.pal(8, ellipse_col_pal)
-  ellipse_col <- grDevices::colorRampPalette(colors)(n)
+  if (is.null(ellipse_col)) {
+    colors <- RColorBrewer::brewer.pal(8, ellipse_col_pal)
+    ellipse_col <- grDevices::colorRampPalette(colors)(n)
+  }
 
   res <- lapply(1:n, function(t){
     plotrix::draw.ellipse(x = 5 + cos((angle + deg * (t - 1)) * pi / 180),
